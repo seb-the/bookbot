@@ -34,8 +34,9 @@ def main():
             print(f"{item["char"]}: {item["num"]}")
     print("============= END ===============")
 
-try:
-    main()
-except Exception as e:
-    print(e)
-    sys.exit(1)
+if __name__ == "__main__": # only execute this block, if script is executed directly
+    try:
+        main()
+    except Exception as e:
+        print(e)
+        sys.exit(1)
