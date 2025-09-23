@@ -20,5 +20,5 @@ def convert_dict_to_list(characters):
 
 # takes list of dicts and sorts the list by "num"
 def sort_by_num(list):
-    return sorted(list, key=lambda x: x["num"])
+    return sorted(list, key=lambda x: x["num"], reverse=True)
 

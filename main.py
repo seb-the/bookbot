@@ -21,6 +21,12 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {wordcount(text)} total words")
     print("--------- Character Count -------")
-    print(count_characters(text))
+    characters = count_characters(text)
+    list_of_dictionaries = convert_dict_to_list(characters)
+    sorted_list = sort_by_num(list_of_dictionaries)
+    for item in sorted_list:
+        if item["char"].isalpha():
+            print(f"{item["char"]}: {item["num"]}")
+    print("============= END ===============")
 
 main()
