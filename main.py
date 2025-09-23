@@ -17,6 +17,13 @@ def get_book_text(filepath):
         text = f.read()
     return text
 
+# further improvements to make main function cleaner
+# def generate_report(book_path, text)
+# the entire section from main that prints the header, word count, character count and footer
+
+# def print_character_statistics(text)
+# block that calculates, sorts and prints the character counts (from characters = count_characters(text) to loop)
+
 def main():
     if len(sys.argv) != 2:
         raise Exception("Usage: python3 main.py <path_to_book>")
