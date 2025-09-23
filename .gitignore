@@ -1,3 +1,5 @@
 # ignore data
 
 /books
+
+__pycache__/
